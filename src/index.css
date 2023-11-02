@@ -3,9 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 
 @layer base {
-  html {
-    font-family: "Raleway", sans-serif;
-  }
+ 
 }
 
 body {
@@ -13,6 +11,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    background-color: #0a192f
  
 }
 
@@ -22,24 +21,4 @@ body {
 @tailwind components;
 @tailwind utilities;
 
-.main {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: -1;
-}
 
-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000000cc;
-}

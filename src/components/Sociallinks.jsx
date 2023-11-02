@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+/* import { BsFillPersonLinesFill } from "react-icons/bs"; */
 
 const Sociallinks = () => {
   const links = [
@@ -33,7 +33,7 @@ const Sociallinks = () => {
       ),
       href: "mailto:faseehsheikh93@gmail.com",
     },
-    {
+   /*  {
       id: 4,
       child: (
         <>
@@ -43,7 +43,7 @@ const Sociallinks = () => {
       href: "/resume.pdf",
       style: "rounded-br-md",
       download: true,
-    },
+    }, */
   ];
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-o fixed">

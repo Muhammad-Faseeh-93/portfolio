@@ -29,7 +29,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-black text-white  fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 bg-[#0a192f] text-white  fixed">
       <div>
         <h1 className="text-4xl font-signature ml-2 font-5xl ">Faseeh</h1>
       </div>
@@ -53,13 +53,20 @@ const Navbar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[#0a192f] ">
           {links.map(({ id, link }) => (
             <li
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
